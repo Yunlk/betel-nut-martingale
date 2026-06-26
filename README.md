@@ -17,9 +17,9 @@ betel-nut-martingale/
 │   ├── core_recursion.py           # Appendix A: Recursive solution for E(m), F(m)
 │   ├── monte_carlo.py              # Appendix A: Monte Carlo simulation
 │   ├── eigenvalues.py              # Appendix B: Eigenvalue table (precomputed)
-│   ├── large_deviation.py          # Appendix C: Large deviation rate function
-│   ├── martingale_check.py         # Appendix D: Martingale property verification
-│   └── experiment_simulator.py     # Appendix E: Behavioral experiment data generator
+│   ├── large_deviation.py          # Appendix C: Exact tail probabilities
+│   ├── martingale_check.py         # Appendix D: Corrected martingale diagnostics
+│   └── experiment_simulator.py     # Appendix E: Hypothetical mechanism data generator
 ├── data/
 │   └── experiment_raw.csv          # Generated after running run_all.py
 └── figures/
@@ -64,25 +64,29 @@ python run_all.py
 ### 5. Check outputs
 
 - Figures: Three PNG files in figures/ directory.
-- Experimental data: CSV file data/experiment_raw.csv.
-- Console output: Tables for eigenvalues (Appendix B), large deviation (Appendix C), martingale test (Appendix D), and experiment summary (Appendix E).
+- Hypothetical mechanism data: CSV file data/experiment_raw.csv.
+- Console output: Table I, eigenvalues (Appendix B), exact tail probabilities (Appendix C), corrected martingale diagnostics (Appendix D), and hypothetical mechanism summary (Appendix E).
+
+The corrected asymptotic form is:
+
+E[N(B)] = 5B/38 - 915/1444 + (5/76)(-1)^B + sum_{j=1}^8 b_j r_j^B.
 
 ## Output Description
 
 Output: figures/figure1_eigenvalues.png
-Description: Distribution of the 11 eigenvalues in the complex plane
+Description: Distribution of the 11 recurrence roots in the complex plane
 
 Output: figures/figure2_expected_vs_money.png
 Description: Theoretical vs simulated expected packs for initial money 10–60 CNY
 
 Output: figures/figure3_strategy_comparison.png
-Description: Bar chart comparing four marketing strategies
+Description: Satirical/hypothetical mechanism comparison, not empirical data
 
 Output: data/experiment_raw.csv
-Description: Simulated behavioral experiment data (120 subjects, 4 groups)
+Description: Hypothetical mechanism data (not human-subject data)
 
 Output: Console (stdout)
-Description: Numerical tables for Appendices B–E
+Description: Numerical tables for Appendices A–E
 
 ## Citation
 
