@@ -87,4 +87,4 @@ yunlk, otto, Tengyang Tianxia, Gunmu. "Optimal Stopping Strategy for Betel Nut C
 
 ## License
 
-MIT License (or specify your preferred license)
+MIT License
