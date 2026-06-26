@@ -8,7 +8,6 @@ Authors: yunlk, otto, Tengyang Tianxia, Gunmu
 
 ## Repository Structure
 ```
-
 betel-nut-martingale/
 ├── README.md
 ├── requirements.txt
