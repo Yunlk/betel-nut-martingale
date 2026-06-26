@@ -37,27 +37,23 @@ betel-nut-martingale/
 
 ### 1. Clone the repository
 ```
-
 git clone https://github.com/yunlk/betel-nut-martingale.git
 cd betel-nut-martingale
 ```
 
 ### 2. Create a virtual environment (recommended)
 ```
-
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
 
 ### 3. Install dependencies
 ```
-
 pip install -r requirements.txt
 ```
 
 ### 4. Run the main script
 ```
-
 python run_all.py
 ```
 
