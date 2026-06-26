@@ -1,5 +1,6 @@
 import numpy as np
-from core_recursion import p
+from src.core_recursion import p
+
 
 def simulate_once(start_money):
     money = start_money
@@ -11,6 +12,7 @@ def simulate_once(start_money):
             money -= 2
             packs += 1
     return packs
+
 
 def monte_carlo(money_values, n_sim=10000, seed=20260625):
     np.random.seed(seed)
