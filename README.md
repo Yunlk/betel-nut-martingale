@@ -37,27 +37,23 @@ betel-nut-martingale/
 
 ### 1. Clone the repository
 ```
-
 git clone https://github.com/yunlk/betel-nut-martingale.git
 cd betel-nut-martingale
 ```
 
 ### 2. Create a virtual environment (recommended)
 ```
-
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
 
 ### 3. Install dependencies
 ```
-
 pip install -r requirements.txt
 ```
 
 ### 4. Run the main script
 ```
-
 python run_all.py
 ```
 
@@ -69,7 +65,10 @@ python run_all.py
 
 The corrected asymptotic form is:
 
-E[N(B)] = 5B/38 - 915/1444 + (5/76)(-1)^B + sum_{j=1}^8 b_j r_j^B.
+$$
+\boxed{\mathbb{E}\left[N\left(B\right)\right]=\frac{5}{38}B-\frac{915}{1444}+\frac{5}{76}\left(-1\right)^B+\sum_{i=1}^{8}c_i\lambda_i^B}
+$$
+
 
 ## Output Description
 
